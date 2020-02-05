@@ -12,7 +12,7 @@ class MoviesCmsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     title = scrapy.Field()
-    url = scrapby.Field()
+    url = scrapy.Field()
     image = scrapy.Field()
     year = scrapy.Field()
     story = scrapy.Field()
