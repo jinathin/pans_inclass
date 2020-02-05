@@ -1,16 +1,16 @@
 import scrapy
 
-from scrapy.spiders import CrawlSpider, Rule 
+from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 
 from movies_cms.items import MoviesCmsItem
 
-class MovieSpider(CrawlSpider);
+
+class MovieSpider(CrawlSpider):
     name = 'movie'
     allowed_domains = ['movie.thepan.cn']
-    start_url = [
+    start_urls = [
         'https://movie.thepan.cn'
-
     ]
 
     rules = (
