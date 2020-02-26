@@ -1,7 +1,7 @@
 # %% Load library
 from requests_html import HTMLSession
 
-# %% Build the session
+# %% Build the session this way
 session = HTMLSession()
 
 # %% Request
@@ -17,7 +17,7 @@ print(r.html.absolute_links)
 gnb_menu_list = r.html.find('#gnb_menu_list', first=True)
 print(gnb_menu_list.html)
 print(gnb_menu_list.text)
-
+a
 # %%
 import json
 output_file = 'menu.json'
