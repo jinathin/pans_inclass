@@ -1,4 +1,4 @@
 ## Run the spider
 ```
-scrapy crawl fanshawe -t json -o - > items.json 
+scrapy crawl fanshaweSpider -t json -o - > items.json 
 ```

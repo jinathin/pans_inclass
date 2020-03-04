@@ -64,9 +64,18 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'fanshawe.pipelines.FanshawePipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'fanshawe.pipelines.MongoPipeline': 300,
+}
+
+MONGODB_SERVER = 'localhost'
+MONGODB_PORT = 8099
+MONGODB_DB = 'fanshawe'
+MONGODB_COLLECTION = 'programs'
+MONGODB_USER = 'root'
+MONGODB_PASS = 'example'
+
+# if you arent using docker you have to change all the above infos to correct one 
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
